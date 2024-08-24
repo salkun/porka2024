@@ -1,0 +1,154 @@
+/* Reset CSS untuk konsistensi di berbagai browser */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url('asset/bc.jpg') no-repeat center center fixed; /* Ganti 'background.jpg' dengan nama file gambar Anda */
+    background-size: cover; /* Memastikan gambar memenuhi seluruh background */
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px; /* Tambahan padding untuk tampilan di layar kecil */
+}
+
+.container {
+    text-align: center;
+    background-color: #F0A8D0; /* Warna kontainer dengan transparansi */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px #FFEBD4;
+    max-width: 400px;
+    width: 100%;
+}
+
+.profile-img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 3px solid #FF69B4; /* Warna pink untuk garis luar gambar profil */
+}
+
+h1 {
+    font-size: 24px; /* Ukuran font yang disesuaikan */
+    margin-bottom: 10px;
+    color: #FF69B4; /* Warna judul pink */
+}
+
+h3 {
+    font-size: 16px; /* Ukuran font yang lebih kecil untuk layar kecil */
+    margin-bottom: 25px;
+    color: #f45e75; /* Warna subjudul pink yang lebih lembut */
+}
+
+.links .link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FF69B4; /* Warna tombol pink */
+    color: #FFEBD4;
+    padding: 12px;
+    margin: 10px 0;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-size: 16px; /* Ukuran font yang lebih kecil untuk tombol */
+}
+
+.links .link:hover {
+    background-color: #FF85C1; /* Warna tombol saat hover pink yang lebih cerah */
+    transform: translateY(-3px); /* Efek hover naik */
+}
+
+.link-logo {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    object-fit: contain;
+}
+
+.form {
+    margin-top: 20px;
+}
+
+.form input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 2px solid #FF69B4;
+    border-radius: 5px;
+    background-color: FFEBD4;
+    color: #FFF;
+}
+
+.form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #FF69B4;
+    color: #FFEBD4;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form button:hover {
+    background-color: #FF85C1;
+}
+
+.footer {
+    background-color: #0A192F; /* Warna latar belakang footer */
+    padding: 10px 0; /* Padding atas dan bawah */
+    color: white; /* Warna teks footer */
+}
+
+.footer a {
+    color: #FF69B4; /* Warna tautan footer */
+    text-decoration: none; /* Menghapus garis bawah pada tautan */
+}
+
+.footer a:hover {
+    text-decoration: underline; /* Menambahkan garis bawah saat hover */
+}
+/* Responsif untuk layar lebih kecil */
+@media (max-width: 576px) {
+    .container {
+        padding: 20px; /* Kurangi padding untuk layar kecil */
+    }
+    
+    .profile-img {
+        width: 100px; /* Sesuaikan ukuran gambar profil untuk layar kecil */
+        height: 100px;
+    }
+
+    h1 {
+        font-size: 20px; /* Sesuaikan ukuran font untuk layar kecil */
+    }
+
+    h3 {
+        font-size: 14px; /* Ukuran font subjudul lebih kecil */
+    }
+
+    .links .link {
+        font-size: 14px; /* Sesuaikan ukuran font tombol */
+        padding: 10px; /* Kurangi padding tombol untuk layar kecil */
+    }
+
+    .form input[type="text"] {
+        padding: 10px; /* Kurangi padding input untuk layar kecil */
+    }
+
+    .form button {
+        padding: 10px; /* Kurangi padding tombol untuk layar kecil */
+    }
+    .footer {
+        padding: 5px 0; /* Kurangi padding footer untuk layar kecil */
+    }
+}
