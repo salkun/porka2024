@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: url('asset/bc.jpg') no-repeat center center fixed; /* Ganti 'background.jpg' dengan nama file gambar Anda */
+    background: url('asset/bc2.jpg') no-repeat center center fixed; /* Ganti 'background.jpg' dengan nama file gambar Anda */
     background-size: cover; /* Memastikan gambar memenuhi seluruh background */
     color: #FFF;
     display: flex;
